@@ -1,0 +1,8 @@
+<!-- <svg width="48" height="40" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#FF52C1" stroke="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+  <path d="M12 2c-4.97 0-9 4.03-9 9v2c0 4.97 4.03 9 9 9s9-4.03 9-9v-2c0-4.97-4.03-9-9-9zm0 14.5c-2.485 0-4.5-2.015-4.5-4.5s2.015-4.5 4.5-4.5 4.5 2.015 4.5 4.5-2.015 4.5-4.5 4.5z"/>
+  <path d="M12 13v-1"/>
+  <path d="M12 8.5a1.5 1.5 0 0 1 0 3 1.5 1.5 0 0 1 0-3zM12 15a1 1 0 0 1-1-1v-1a1 1 0 0 1 2 0v1a1 1 0 0 1-1 1z"/>
+</svg> -->
+<svg  width="48" height="40" xmlns="http://www.w3.org/2000/svg" fill="#FF52C1" viewBox="0 0 24 24">
+<path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4zm0 10.99h7c-.53 4.12-3.28 7.79-7 8.94V12H5V6.3l7-3.11v8.8z"/>
+</svg>

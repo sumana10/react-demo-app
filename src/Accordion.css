@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Poppins:wght@600&display=swap');
+
+.accordion {
+  background-color: #F2F6FE;
+  color: hsl(192, 100%, 9%);
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 18px;
+  transition: 0.4s;
+  font-family: 'Open Sans', sans-serif;
+  
+}
+
+.active, .accordion:hover {
+  background-color: hsl(193, 100%, 96%);
+}
+
+.accordion:after {
+  content: '\25bc';
+  color: #777;
+  font-weight: bold;
+  float: right;
+  margin-left: 5px;
+}
+
+.accordion.active:after {
+  content: '\25b2';
+}
+
+.panel {
+  padding: 0 18px;
+  background-color: white;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+}
+p{
+  opacity: 0.6;
+}
