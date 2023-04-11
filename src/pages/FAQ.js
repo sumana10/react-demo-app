@@ -37,7 +37,7 @@ const FAQ = () => {
       <InnerNav />
       <main>
       <div className="container">
-        <div style={{ textAlign: "center", marginTop: "80px" }}>
+        <div style={{ textAlign: "center", marginTop: "120px" }}>
           <h1>Do You Have Questions ⁉</h1>
         </div>
         <Accordion sections={sections} />

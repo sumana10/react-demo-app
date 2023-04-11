@@ -44,7 +44,7 @@ const WeDo = () => {
     <>
       <InnerNav />
       <div className="container">
-        <div style={{ textAlign: "center", marginTop: "80px" }}>
+        <div style={{ textAlign: "center", marginTop: "120px" }}>
           <h1>What We Do💁🏻‍♀️</h1>
         </div>
         <div
