@@ -52,7 +52,7 @@ const WeDo = () => {
           className="grid-container"
           style={{
             display: "grid",
-            gridTemplateColumns: "auto auto auto",
+            gridTemplateColumns: "repeat(auto-fit, minmax(250px, 1fr))",
             padding: "10px",
             gap: "10px",
             marginBottom: "50px",
