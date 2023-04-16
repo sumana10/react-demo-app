@@ -10,6 +10,8 @@ import { useState } from "react";
 import InnerNav from "../components/InnerNav";
 import Button from "../components/Button";
 
+import Header from "../components/Header";
+
 const ContactPage = () => {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
@@ -47,7 +49,7 @@ const ContactPage = () => {
 
   return (
     <>
-    <InnerNav />
+   <Header/>
     <main>
     <div className="container">
         <Hero title="Contact Us" illustation={illustation} />

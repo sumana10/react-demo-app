@@ -1,6 +1,7 @@
 import React from "react";
 import InnerNav from "../components/InnerNav";
 import { useState } from "react";
+import Header from "../components/Header";
 
 const WeDo = () => {
   const [showDescription, setShowDescription] = useState(false);
@@ -42,7 +43,7 @@ const WeDo = () => {
 
   return (
     <>
-      <InnerNav />
+     <Header/>
       <div className="container">
         <div style={{ textAlign: "center", marginTop: "120px" }}>
           <h1>What We Do💁🏻‍♀️</h1>

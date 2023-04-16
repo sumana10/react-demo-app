@@ -7,11 +7,13 @@ import Feature from "../components/Feature";
 import InnerNav from "../components/InnerNav";
 import communities from "../assets/images/icon-communities.svg";
 import messages from "../assets/images/icon-messages.svg";
+import Header from "../components/Header";
 
 const AboutPage = () => {
   return (
     <>
-      <InnerNav />
+      {/* <InnerNav /> */}
+      <Header/>
       <main>
         <div className="container">
 

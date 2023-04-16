@@ -337,11 +337,18 @@ footer p{
 
    nav ul li{
     margin: 20px 0;
+   
+  }
+
+  nav ul li a.active{
+    background-color: transparent;
   }
 
   nav ul li a {
     color: #fff
   }  
+
+  
 
   nav .hamburger{
     background-color: transparent; 

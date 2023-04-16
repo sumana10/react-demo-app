@@ -1,10 +1,9 @@
-import React from "react";
-import mockup from "../assets/images/illustration-mockups.svg";
+import React, {useState} from "react";
 import { NavLink, Link } from "react-router-dom";
-import Button from "./Button";
 import Logo from "./Logo";
 import hamburger from "../assets/images/icon-hamburger.svg";
 import close from "../assets/images/icon-close.svg";
+// import HeroHome from "./HeroHome";
 
 // const Header = () => {
 //   return (
@@ -52,13 +51,31 @@ import close from "../assets/images/icon-close.svg";
 // };
 
 const Header = () => {
+
+  const [showNav, setShowNav] = useState(false);
+  const [nav, setnav] = useState(false);
+
+  const changeBackground = () => {
+    if (window.scrollY >= 50) {
+      setnav(true);
+    } else {
+      setnav(false);
+    }
+  };
+  window.addEventListener("scroll", changeBackground);
+
+
+  const toggleNav = () => {
+    setShowNav(!showNav);
+  };
+
   return (
     <>
-      <nav>
+      <nav className={nav ? "inner-page" : ""}>
         <div className="container">
           <div className="flex">
             <Logo />
-            <button class="hamburger" id="hamburger">
+            <button class="hamburger" id="hamburger" onClick={toggleNav}>
               <img
                 src={hamburger}
                 alt="icon-hamburger"
@@ -66,7 +83,7 @@ const Header = () => {
               />
               <img src={close} alt="icon-close" class="close" />
             </button>
-            <ul id="menu">
+            <ul id="menu" className={showNav ? 'show' : ''}>
               <li>
                 <NavLink to="/">Home</NavLink>
               </li>
@@ -88,24 +105,7 @@ const Header = () => {
         </div>
         {/* <button class="btn btn-secondary">Try It Free</button> */}
       </nav>
-      <header>
-        <div className="container">
-          <div className="flex">
-            <div>
-              <h1>Build The Community Your Fans Will Love</h1>
-              <p>
-                Huddle re-imagines the way we build communities. You have a
-                voice, but so does your audience. Create connections with your
-                users as you engage in genuine discussion.
-              </p>
-              <Button title="Get Started For Free" />
-            </div>
-            <div>
-              <img className="header-img" src={mockup} alt="" />
-            </div>
-          </div>
-        </div>
-      </header>
+      {/* <HeroHome/> */}
     </>
   );
 };
