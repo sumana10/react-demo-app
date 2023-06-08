@@ -1,7 +1,5 @@
-import React from "react";
-import InnerNav from "../components/InnerNav";
 import Accordion from "../components/Accordion";
-import Header from "../components/Header";
+
 
 const FAQ = () => {
   const sections = [
@@ -34,7 +32,6 @@ const FAQ = () => {
 
   return (
     <>
-      <Header/>
       <main>
       <div className="container">
         <div style={{ textAlign: "center", marginTop: "120px" }}>

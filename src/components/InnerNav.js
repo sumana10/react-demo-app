@@ -1,6 +1,5 @@
 import React,{useState} from "react";
 import { Link, NavLink } from "react-router-dom";
-import logo from "../assets/images/logo.svg";
 import Logo from "./Logo";
 import hamburger from "../assets/images/icon-hamburger.svg";
 import close from "../assets/images/icon-close.svg";

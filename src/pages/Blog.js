@@ -1,13 +1,11 @@
-import React from 'react'
-import InnerNav from '../components/InnerNav';
 import users from "../assets/images/illustration-your-users.svg";
 import grow from "../assets/images/illustration-grow-together.svg";
 import conversation from "../assets/images/illustration-flowing-conversation.svg"
 import Hero from '../components/Hero';
-import Header from '../components/Header';
+
 const Blog = () => {
   return (
-    <>   <Header/>
+    <>   
     <main>
     <div className="container">
     {/* <div style={{margin:"60px auto"}}>

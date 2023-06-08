@@ -1,19 +1,11 @@
-import React from "react";
-import logo from "../assets/images/logo.svg";
 import illustation from "../assets/images/illustration-grow-together.svg";
-import { Link } from "react-router-dom";
-import Hero from "../components/Hero";
-import Feature from "../components/Feature";
-import InnerNav from "../components/InnerNav";
 import communities from "../assets/images/icon-communities.svg";
 import messages from "../assets/images/icon-messages.svg";
-import Header from "../components/Header";
+import { Hero, Feature } from '../components';
 
 const AboutPage = () => {
   return (
     <>
-      {/* <InnerNav /> */}
-      <Header/>
       <main>
         <div className="container">
 

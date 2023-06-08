@@ -1,4 +1,3 @@
-import React from "react";
 import logofooter from "../assets/images/logowhite.svg";
 import { Link } from "react-router-dom";
 import SmallBox from "./SmallBox";

@@ -1,0 +1,12 @@
+export {default as Accordion} from './Accordion';
+export {default as Body} from './Body';
+export {default as Button} from './Button';
+export {default as Feature} from './Feature';
+export {default as Footer} from './Footer';
+export {default as Header} from './Header';
+export {default as Hero} from './Hero';
+export {default as HeroHome} from './HeroHome';
+export {default as InnerNav} from './InnerNav';
+export {default as Logo} from './Logo';
+export {default as SmallBox} from './SmallBox';
+export {default as TestAccordion} from './TestAccordion';

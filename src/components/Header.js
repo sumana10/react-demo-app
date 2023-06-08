@@ -53,21 +53,26 @@ import close from "../assets/images/icon-close.svg";
 const Header = () => {
 
   const [showNav, setShowNav] = useState(false);
-  const [nav, setnav] = useState(false);
+  
+  const [nav, setNav] = useState(false);
 
-  const changeBackground = () => {
-    if (window.scrollY >= 50) {
-      setnav(true);
-    } else {
-      setnav(false);
-    }
-  };
+  // const changeBackground = () => {
+  //   if (window.scrollY >= 50) {
+  //     setNav(true);
+  //   } else {
+  //     setNav(false);
+  //   }
+  // };
+
+  const changeBackground = () =>{
+    if(window.scrollY >= 50) setNav(true);
+    setNav(false);
+  }
   window.addEventListener("scroll", changeBackground);
 
-
-  const toggleNav = () => {
+  const toggleNav = () =>{
     setShowNav(!showNav);
-  };
+  }
 
   return (
     <>
@@ -75,13 +80,13 @@ const Header = () => {
         <div className="container">
           <div className="flex">
             <Logo />
-            <button class="hamburger" id="hamburger" onClick={toggleNav}>
+            <button className="hamburger" id="hamburger" onClick={toggleNav}>
               <img
-                src={hamburger}
-                alt="icon-hamburger"
-                class="open"
+              src={hamburger}
+              alt="icon-hamburger"
+              class="open"
               />
-              <img src={close} alt="icon-close" class="close" />
+              <img src={close} alt="icon-close" class="close"/>
             </button>
             <ul id="menu" className={showNav ? 'show' : ''}>
               <li>
@@ -90,7 +95,6 @@ const Header = () => {
               <li>
                 <NavLink to="/about">About</NavLink>
               </li>
-
               <li>
                 <NavLink to="/blog">Blog</NavLink>
               </li>

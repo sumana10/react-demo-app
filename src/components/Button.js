@@ -5,12 +5,11 @@ import UserContext from '../utils/UserContext'
 const Button = ({title}) => {
   
   const {user} = useContext(UserContext);
-  const [buttonTitle, setButtonTitle] = useState("")
+  const [buttonTitle, setButtonTitle] = useState("");
 
+  
   const handleClick = () =>{
-
     setButtonTitle(user.email);
-
   }
 
   return (

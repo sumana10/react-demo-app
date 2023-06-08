@@ -1,16 +1,14 @@
-import React from "react";
-import InnerNav from "../components/InnerNav";
 import { useState } from "react";
-import Header from "../components/Header";
 
 const WeDo = () => {
   const [showDescription, setShowDescription] = useState(false);
   const [selectedItem, setSelectedItem] = useState("");
 
-  const handleClick = (item) => {
+
+  const handleClick = (item) =>{
     setSelectedItem(item);
     setShowDescription(true);
-  };
+  }
 
   const styleX = {
     backgroundColor: "rgba(255, 255, 255, 0.8)",
@@ -43,7 +41,6 @@ const WeDo = () => {
 
   return (
     <>
-     <Header/>
       <div className="container">
         <div style={{ textAlign: "center", marginTop: "120px" }}>
           <h1>What We Do💁🏻‍♀️</h1>
@@ -58,18 +55,15 @@ const WeDo = () => {
             marginBottom: "50px",
           }}
         >
-          {wedo.map((item, index) => (
-            <div
-              key={index}
-              className="grid-item"
-              style={styleX}
-              onClick={() => handleClick(item)}
-            >
-              {item}
-            </div>
+          {wedo.map((item, index) =>(
+            <div 
+            key={index}
+            className="grid-item"
+            style={styleX}
+            onClick={() => handleClick(item)}
+            >{item}</div>
           ))}
         </div>
-        
         {showDescription ? <Description item={selectedItem} description={wedoDes[wedo.indexOf(selectedItem)]} /> : <Description />}
         
       </div>

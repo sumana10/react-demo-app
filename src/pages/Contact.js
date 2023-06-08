@@ -1,18 +1,11 @@
-import React from "react";
-import Hero from "../components/Hero";
-
-import logo from "../assets/images/logo.svg";
 import illustation from "../assets/images/illustration-your-users.svg";
 import messages from "../assets/images/icon-messages.svg"
-import Feature from "../components/Feature";
-
+import { Hero, Feature } from "../components/";
 import { useState } from "react";
-import InnerNav from "../components/InnerNav";
-import Button from "../components/Button";
 
-import Header from "../components/Header";
 
 const ContactPage = () => {
+
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
@@ -26,8 +19,7 @@ const ContactPage = () => {
     setEmail("");
     setMessage("");
     setShowMessage(true);
-  };
-
+  }
 
 
   const btnStyle = {
@@ -49,13 +41,14 @@ const ContactPage = () => {
 
   return (
     <>
-   <Header/>
+    
     <main>
     <div className="container">
         <Hero title="Contact Us" illustation={illustation} />
         <Feature title="Let's stay connected, drop us a line!" desc={"example@huddle.com"} featureicon={messages}/>
         
         <section className="contact-form">
+        {!showMessage ? (
           <form onSubmit={handleSubmit}>
             <label htmlFor="name">Name</label>
             <input
@@ -64,7 +57,7 @@ const ContactPage = () => {
               name="name"
               placeholder="Enter Name"
               value={name}
-              onChange={(event) => setName(event.target.value)}
+              onChange={(event) =>setName(event.target.value)}
               required
             />
 
@@ -91,8 +84,8 @@ const ContactPage = () => {
 
             {/* <Button title="Send Message" stylex={btnStyle}/> */}
             <button stylex={btnStyle}>Send Message</button>
-          </form>
-          {/* {showMessage && <Message/>} */}
+          </form>) : (
+          <Message/>)}
         
         </section>
       
@@ -108,7 +101,7 @@ const Message = () =>{
 
   return (
     <div>
-      <h2>Successfully Submitted</h2>
+      <h2 style={{color: "green"}}>Successfully Submitted</h2>
     </div>
   )
 }
